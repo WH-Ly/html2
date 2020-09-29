@@ -1,0 +1,10 @@
+body{
+    background-image: url(file:///Users/whly/Documents/Kermit%20de%20kikker.jpg)
+}
+
+img {
+    border: 2px solid darkgreen;
+    border-radius: 2px;
+    padding: 40px;
+    width: 240px;
+}
