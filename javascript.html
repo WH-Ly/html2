@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  
+<head>
+</head>
+
+
+<body>
+  <label for="Keycode">Keycode:</label>
+  <input type="text" size="20" onkeypress="myFunction(event)">
+<p id="code"></p>
+
+<label for="Alt">Alt:</label>
+<input type="text" size="20" onkeypress="myFunction(event)">
+<p id="code"></p>
+
+
+ <script>
+  function myFunction(event) {
+  var x = event.which || event.keyCode;
+  document.getElementById("code").innerHTML = "The Unicode value is: " + x;
+}
+
+</script>
+
+
+</body>
+</html>

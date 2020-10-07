@@ -1,67 +1,145 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta content="text/html; charset=utf8" http-equiv="Content-Type" />
-    <link rel="stylesheet" href="portfolio.css" type="text/css" />
-    <title>Portfolio</title>
+<title>Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+}
+
+
+header {
+  background-color:rgb(37, 37, 37);
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+nav {
+  float: left;
+  width: 20%;
+  height: 380px; 
+  background: white;
+  padding: 20px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 14px;
+  width:80%;
+  background-color: whitesmoke;
+  height: 189px;
+}
+
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer {
+  background-color:darkslategray;
+  padding: 8px;
+  text-align: center;
+  color:white;
+}
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height:auto;
+  }
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 260px;
+}
+</style>
 </head>
-
-<head>
-    <style>
-        h1 {color:lightseagreen}
-    </style>
-    </head>
-    <body>
-        <h1>Portfolio</h1>
-    </body>
-
-
-<body style="background-color:white">
+<body>
     
-    <h3 style="border:2px solid teal;">
-    <article>
-    <h2>Wie ben ik?</h2>
 
-    <p>Mijn is Wen Hua ly,
-    Ik ben 17 jaar oud en ik woon
-    in Heerenveen met mijn broertje en
-    mijn ouders.</p>
-    </article>
-    
-    <h3 style="border:2px solid teal;">
-    <article>
-    
-    <h2>Hobby's</h2>
+<header>
+  <h2>Portfolio</h2>
+</header>
 
+<img src="Kermit de kikker.jpg" alt=" Kermit de kikker">
+
+
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Wie ben ik?</h1>
+    <p>Mijn naam is Wen Hua Ly,
+      Ik ben 17 jaar oud en ik woon
+      in Heerenveen met mijn broertje en
+      mijn ouders.
+     Op mijn vorige school Het Kei College
+     had ik voor de opleiding PIE (Programmeren, Installeren & Energie)
+      gekozen. De opleiding PIE was de enige opleiding wat te maken had met
+      programmeren & electro. Na 4 jaar heb ik mijn vmbo opleiding afgemaakt en
+      ben ik door gaan stromen naar het mbo. Ik zit nu op het Friesland College
+      als eerste jaar met de opleiding Software developer. We zijn nu inmiddels bijna
+      2 maanden verder en ik heb het tot nu toe naar mijn zin.
+      </p>
+  </article>
+
+  <article>
+    <h1>Hobby's, Sport & Vrije Tijd</h1>
     <p>Mijn hobby's zijn gamen en tekenen,
-    Ik zat eerst op badminton maar de pret was
-    na 3-4 jaar er wel af.</p>
-    </article>
+      Ik zat eerst op nadminton maar de pret was
+      na 3-4 jaar er wel af.
+      Af en toe ga ik met vrienden en mijn broertje
+      wel eens de deur uit om samen naar de Mc Donalds (mac) te gaan
+      of naar de supermarkt (poiesz) om wat eten te gaan halen.
+    </p>
+  </article>
 
-    <h3 style="border:2px solid teal;">
-    
-        <article>
+  <article>
+    <h1>Werk</h1>
+    <p>Mijn allereerste bijbaan & enigste bijbaan
+      is bij de Poiesz.
+      Ik werk al meer dan 1 jaar bij
+      de Poiesz als groenteboer en soms vakkenvuller
+      (bijna 1,5 jaar).
+    </p>
+  </article>
+</section>
 
-    <h2>Werk</h2>
+<footer>
+  <p>@mail</p>
+  <p>Telefoon nummer</p>
+</footer>
 
-    <p>Ik werk bij de Poiesz als groenteboer en
-    vakkenvuller</p>
-
-    </article>
-    
-    <h3 style="border:2px solid teal;">
-   
-     <article>
-    <h2>Opleiding</h2>
-
-     <p>Ik zit nu in het eerste jaar van mijn
-     Software Developer opleiding. Ik heb het erg
-     naar me zin. </p>
-
-</article>
 
 </body>
-
 </html>
