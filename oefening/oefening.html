@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+
+ <script>
+var schoenlepel="groot";
+window.onload=function() {
+    alert('hello');
+}
+
+function changedata(file) {
+  var content=document.getElementById("content");
+  content.data=file;
+}
+
+</script>
+
+
+<body>
+    <div class="sidenav">
+        <a href= "#" onclick="changedata('./oefening1.html')">test</a>
+        <a href= "#" onclick="changedata('./oefening2.html')">test</a>
+        <a href= "#" onclick="changedata('./oefening3.html')">test</a>
+        <a href= "#" onclick="changedata('./oefening4.html')">test</a>
+ </div>
+ 
+ <article class= "ja">
+    <object data="./oefening1.html" type="text/html" id= "content"></object>
+    </article>
+</body>
+</html>
