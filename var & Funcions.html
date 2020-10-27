@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+</head>
+
+
+<body>
+    <p>
+        text1
+    </p>
+    <p>
+        text2
+    </p>
+    <p>
+        text3
+    </p>
+
+<script>
+var list = document.getElementsByClassName("p");
+var text = "vb";
+
+//list.forEach(function(item, index, array) {
+ //   console.log(item, index, array)
+//});
+for (key in list){
+    console.log(key, list[key]);
+    list[key].innerHTML = "MSJP is " + key + "<br>";
+}
+//for (i = 0; i < list.lengh; i++) {
+    //var text = "vb";
+    //text += list[i].innerHTML + "<br>";
+    //console.log(i);
+    //list[i].innerHTML = "MSJP is" + i + "<br>";
+//}
+//console.log(text);
+</script>
+</body>
+</html>
