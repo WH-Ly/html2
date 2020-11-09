@@ -3,20 +3,74 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
 <head>
 <title>Blank Page</title>
 </head>
 
+
 <style>
-body{background-color:turquoise}
-h1{color:blue}
-p{color:red}
+h2 {
+  color: blue;
+  font-family: verdana;
+  font-size: 240%;
+}
+
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 220%;
+}
+
+p {
+  color: red;
+  font-family: courier;
+  font-size: 120%;
+}
+
+p {
+  border: 4px solid white;
+  padding:20px;
+}
+
+footer {
+  color: blue;
+  font-size: 100%;
+  border: 4px solid white;
+  padding:20px;
+}
+
+body{background-color:turquoise;}
+
+img {
+  border: 4px solid white;
+  border-radius: 1px;
+  padding: 1px;
+  width: 280px;
+}
 </style>
 
 
+<script>
+var Kermit="groot";
+window.onload=function() {
+    alert('Welcome to the webpage stranger');
+}
+
+function changedata(file) {
+  var content=document.getElementById("content");
+  content.data=file;
+}
+</script>
+
+
 <body>
+  <h2>About the webpage</h2>
+
+  <img src="Kermit de kikker(happy).jpg" alt=" Kermit de kikker(happy)">
+
       <article>
-          <h1>About the webpage</h1>
+          <h1>More</h1>
         <p>blank page blank page blank page blank page
             blank page blank page blank page blank page
             blank page blank page blank page blank page
@@ -34,16 +88,14 @@ p{color:red}
         </p>
     </article>
 
-
     <article>
-        <h1>About you</h1>
+        <h1>More</h1>
         <p>blank page blank page blank page blank page
             blank page blank page blank page blank page
             blank page blank page blank page blank page
             blank page blank page blank page blank page
             </p>
     </article>
-
 
     <article>
       <h1>More</h1>
@@ -54,11 +106,21 @@ p{color:red}
         </p>
   </article>
 
+  <div class="sidenav">
+    <a href= "#" onclick="changedata('./.html')">test</a>
+    <a href= "#" onclick="changedata('./.html')">test</a>
+    <a href= "#" onclick="changedata('./.html')">test</a>
+    <a href= "#" onclick="changedata('./.html')">test</a>
+</div>
+
+<article class= "ja">
+<object data="./.html" type="text/html" id= "content"></object>
+</article>
+
   <ul>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
+    <li><a href="#">More</a></li>
+    <li><a href="#">More</a></li>
+    <li><a href="#">More</a></li>
   </ul>
 </body>
 
