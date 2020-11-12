@@ -2,14 +2,18 @@
 <html>
 
 <head>
-<title>Blank Page</title>
+<title>Portfolio</title>
 </head>
 
 <style>
+*{
+  box-sizing:border-box;
+}
+
   h2 {
     color: orangered;
     font-family: verdana;
-    font-size: 240%;
+    font-size: 140%;
   }
   
   h1 {
@@ -28,7 +32,67 @@
     border: 4px solid red;
     padding:20px;
   }
-  
+
+  .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
   footer {
     color: orangered;
     font-size: 180%;
@@ -42,8 +106,9 @@
     border: 4px solid red;
     border-radius: 0px;
     padding: 0px;
-    width: 280px;
+    width: 400px;
   }
+
   </style>
 
 <script>
@@ -56,112 +121,77 @@ function changedata(file) {
   var content=document.getElementById("content");
   content.data=file;
 }
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
 </script>
 
 <body>
-  <h2>About the webpage</h2>
+  <h1>Portfolio</h1>
 
-    <img src="Kermit de kikker(happy).jpg" alt=" Kermit de kikker(happy)">
-  
+  <img src="Kermit de kikker(auto).gif" alt="Kermit de kikker(auto).gif"> 
 
-
-  <div class="sidenav">
-    <a href= "#" onclick="changedata('./Blank1.html')">test</a>
-    <a href= "#" onclick="changedata('./Blank2.html')">test</a>
-    <a href= "#" onclick="changedata('./Blank3.html')">test</a>
-    <a href= "#" onclick="changedata('./Blank4.html')">test</a>
+<h2>Photo Gallery</h2>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+    <a href= "#" onclick="changedata('./Blank1.html')">Schoolfoto</a>
+    <a href= "#" onclick="changedata('./Blank2.html')">Leren</a>
+    <a href= "#" onclick="changedata('./Blank3.html')">Pauze</a>
+    <a href= "#" onclick="changedata('./Blank4.html')">Art</a>
 </div>
+
+<span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
 <object data="./Blank1.html" type="text/html" id= "content"></object>
 </article>
 
-          <article>
-              <h1>More</h1>
-            <p>blank page blank page blank page blank page
-                blank page blank page blank page blank page
-                blank page blank page blank page blank page
-                blank page blank page blank page blank page
-                blank page blank page blank page blank page
-                blank page blank page blank page blank page
-                blank page blank page blank page blank page
-                blank page blank page blank page blank page
-                blank page blank page blank page blank page
-                blank page blank page blank page blank page
-                blank page blank page blank page blank page
-                blank page blank page blank page blank page
-                blank page blank page blank page blank page
-                blank page blank page blank page blank page
-                blank page blank page blank page blank page
-                blank page blank page blank page blank page
-          </p>
-          </article>
-    
-          <article>
-            <h1>More</h1>
-          <p>blank page blank page blank page blank page
-              blank page blank page blank page blank page
-              blank page blank page blank page blank page
-              blank page blank page blank page blank page
-              blank page blank page blank page blank page
-              blank page blank page blank page blank page
-              blank page blank page blank page blank page
-              blank page blank page blank page blank page
-              blank page blank page blank page blank page
-              blank page blank page blank page blank page
-              blank page blank page blank page blank page
-              blank page blank page blank page blank page
-              blank page blank page blank page blank page
-              blank page blank page blank page blank page
-              blank page blank page blank page blank page
-              blank page blank page blank page blank page
-        </p>
-        </article>
-
-        <article>
-          <h1>More</h1>
-        <p>blank page blank page blank page blank page
-            blank page blank page blank page blank page
-            blank page blank page blank page blank page
-            blank page blank page blank page blank page
-            blank page blank page blank page blank page
-            blank page blank page blank page blank page
-            blank page blank page blank page blank page
-            blank page blank page blank page blank page
-            blank page blank page blank page blank page
-            blank page blank page blank page blank page
-            blank page blank page blank page blank page
-            blank page blank page blank page blank page
-            blank page blank page blank page blank page
-            blank page blank page blank page blank page
-            blank page blank page blank page blank page
-            blank page blank page blank page blank page
-      </p>
-      </article>
-
-      <article>
-        <h1>More</h1>
-      <p>blank page blank page blank page blank page
-          blank page blank page blank page blank page
-          blank page blank page blank page blank page
-          blank page blank page blank page blank page
-          blank page blank page blank page blank page
-          blank page blank page blank page blank page
-          blank page blank page blank page blank page
-          blank page blank page blank page blank page
-          blank page blank page blank page blank page
-          blank page blank page blank page blank page
-          blank page blank page blank page blank page
-          blank page blank page blank page blank page
-          blank page blank page blank page blank page
-          blank page blank page blank page blank page
-          blank page blank page blank page blank page
-          blank page blank page blank page blank page
+<article>
+  <h1>Wie ben ik?</h1>
+  <p>Mijn naam is Wen Hua Ly,
+    Ik ben 17 jaar oud en ik woon
+    in Heerenveen met mijn broertje en
+    mijn ouders. Op mijn vorige school Het Kei College
+   had ik voor de opleiding PIE (Programmeren, Installeren & Energie)
+    gekozen. De opleiding PIE was de enige opleiding wat
+    te maken had met programmeren & electro. Na 4 jaar heb
+    ik mijn vmbo opleiding afgemaakt en ben ik door gaan
+    stromen naar het mbo. Ik zit nu op het Friesland College
+    als eerste jaar met de opleiding Software developer.
+    We zijn nu inmiddels bijna 2 maanden verder en ik heb
+    het tot nu toe naar mijn zin.
     </p>
-    </article>
-  
+</article>
+
+<article>
+  <h1>Hobby's, Sport & Vrije Tijd</h1>
+  <p>Mijn hobby's zijn gamen en tekenen,
+    Ik zat eerst op nadminton maar de pret was
+    na 3-4 jaar er wel af.
+    Af en toe ga ik met vrienden en mijn broertje
+    wel eens de deur uit om samen naar de Mc Donalds (mac) te gaan
+    of naar de supermarkt (poiesz) om wat eten te gaan halen.
+  </p>
+</article>
+
+<article>
+  <h1>Werk</h1>
+  <p>Mijn allereerste bijbaan & enigste bijbaan
+    is bij de Poiesz.
+    Ik werk al meer dan 1 jaar bij
+    de Poiesz als groenteboer en soms vakkenvuller
+    (bijna 1,5 jaar).
+  </p>
+</article>
+</section>
+
 <footer>
-  @mail
-  Telefoon nummer
+@mail
+Telefoon nummer
 </footer>
 
 </body>
